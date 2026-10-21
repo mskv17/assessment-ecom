@@ -15,7 +15,7 @@ export const MOCK_CATEGORIES: Category[] = [
     name: 'Wild Honey & Sweeteners',
     slug: 'honey-and-sweeteners',
     description: 'Unfiltered, unprocessed raw wildflower honey harvested ethically from high Himalayan altitudes.',
-    imageUrl: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    imageUrl: 'https://images.unsplash.com/photo-1587049352847-4a222e784d38?auto=format&fit=crop&w=800&q=80',
     itemCount: 4,
     iconName: 'Sparkles',
   },
