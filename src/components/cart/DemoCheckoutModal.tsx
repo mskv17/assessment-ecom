@@ -43,8 +43,9 @@ export const DemoCheckoutModal: React.FC<DemoCheckoutModalProps> = ({ isOpen, on
 
     if (!validationResult.success) {
       const fieldErrors: Partial<Record<keyof CheckoutFormData, string>> = {}
-      validationResult.error.errors.forEach(err => {
-        if (err.path[0]) {
+      const issues = validationResult.error.issues || []
+      issues.forEach(err => {
+        if (err.path && err.path[0]) {
           fieldErrors[err.path[0] as keyof CheckoutFormData] = err.message
         }
       })

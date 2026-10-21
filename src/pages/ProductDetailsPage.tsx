@@ -6,7 +6,6 @@ import {
   Truck,
   RotateCcw,
   ShoppingBag,
-  Sparkles,
   Check,
   MapPin,
 } from 'lucide-react'

@@ -1,4 +1,4 @@
-import React, { Component, type ErrorInfo, type ReactNode } from 'react'
+import { Component, type ErrorInfo, type ReactNode } from 'react'
 import { AlertOctagon, RotateCcw } from 'lucide-react'
 import { Button } from './Button'
 

@@ -129,16 +129,15 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               isOutOfStock
                 ? `${product.name} is out of stock`
                 : cartQuantity > 0
-                ? `Add another ${product.name} to basket. Currently ${cartQuantity} in basket`
-                : `Add ${product.name} to basket`
+                  ? `Add another ${product.name} to basket. Currently ${cartQuantity} in basket`
+                  : `Add ${product.name} to basket`
             }
-            className={`relative min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center transition-all duration-200 cursor-pointer shadow-xs focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#1B4332] ${
-              isOutOfStock
+            className={`relative min-h-[44px] min-w-[44px] rounded-xl flex items-center justify-center transition-all duration-200 cursor-pointer shadow-xs focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#1B4332] ${isOutOfStock
                 ? 'bg-stone-100 text-stone-400 cursor-not-allowed border border-stone-200'
                 : cartQuantity > 0
-                ? 'bg-emerald-700 text-white hover:bg-emerald-800'
-                : 'bg-[#1B4332] text-white hover:bg-[#143823] active:scale-95'
-            }`}
+                  ? 'bg-emerald-700 text-white hover:bg-emerald-800'
+                  : 'bg-[#1B4332] text-white hover:bg-[#143823] active:scale-95'
+              }`}
           >
             {cartQuantity > 0 ? (
               <span className="flex items-center gap-1 px-3 text-xs font-semibold">
@@ -151,7 +150,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
               <span className="flex items-center gap-1.5 px-3.5 text-xs font-semibold">
                 <Plus className="w-4 h-4" />
                 <ShoppingBag className="w-3.5 h-3.5 hidden sm:inline" />
-                <span>Add</span>
+                {/* <span>Add</span> */}
               </span>
             )}
           </button>

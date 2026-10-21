@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Sprout, ArrowRight, Search } from 'lucide-react'
+import { Sprout, ArrowRight } from 'lucide-react'
 import { Button } from '@/components/common/Button'
 
 export const NotFoundPage: React.FC = () => {
