@@ -22,6 +22,10 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: ['./src/tests/setup.ts'],
+    include: ['src/tests/**/*.test.{ts,tsx}'],
+    exclude: ['tests/e2e/**', 'node_modules/**', 'dist/**'],
+    pool: 'threads',
+    fileParallelism: false,
     css: false,
   },
 })
