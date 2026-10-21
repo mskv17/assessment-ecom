@@ -1,0 +1,58 @@
+import type { Category } from '@/types/category'
+
+export const MOCK_CATEGORIES: Category[] = [
+  {
+    id: 'cat_oils',
+    name: 'Artisanal Oils & Ghee',
+    slug: 'oils-and-ghee',
+    description: 'Cold-pressed extractions and slow-simmered A2 Bilona cow ghee crafted using heritage wooden churns.',
+    imageUrl: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80',
+    itemCount: 4,
+    iconName: 'Droplet',
+  },
+  {
+    id: 'cat_honey',
+    name: 'Wild Honey & Sweeteners',
+    slug: 'honey-and-sweeteners',
+    description: 'Unfiltered, unprocessed raw wildflower honey harvested ethically from high Himalayan altitudes.',
+    imageUrl: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    itemCount: 4,
+    iconName: 'Sparkles',
+  },
+  {
+    id: 'cat_grains',
+    name: 'Heritage Grains & Millets',
+    slug: 'heritage-grains',
+    description: 'Ancient unpolished grains, indigenous heirloom rice, and climate-resilient native millets.',
+    imageUrl: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80',
+    itemCount: 4,
+    iconName: 'Wheat',
+  },
+  {
+    id: 'cat_spices',
+    name: 'Single-Origin Spices',
+    slug: 'single-origin-spices',
+    description: 'Aromatic, oil-rich spices sourced directly from biodiverse family micro-farms across India.',
+    imageUrl: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80',
+    itemCount: 4,
+    iconName: 'Flame',
+  },
+  {
+    id: 'cat_nuts',
+    name: 'Dry Fruits & Superfood Seeds',
+    slug: 'dry-fruits-and-seeds',
+    description: 'Sun-dried high-altitude nuts and certified raw superfood seeds packed with natural vitality.',
+    imageUrl: 'https://images.unsplash.com/photo-1508061253366-f7da158b6d46?auto=format&fit=crop&w=800&q=80',
+    itemCount: 4,
+    iconName: 'Sun',
+  },
+  {
+    id: 'cat_beverages',
+    name: 'Handcrafted Teas & Tisanes',
+    slug: 'teas-and-beverages',
+    description: 'Whole leaf orthodox teas, mountain herbal infusions, and ceremonial botanical brews.',
+    imageUrl: 'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80',
+    itemCount: 4,
+    iconName: 'CupSoda',
+  },
+]
